@@ -1,10 +1,9 @@
 # Gmlp_pretrain
  Pretraining code to train Gmlp Language model
 
-
 ## Gmlp pretrain
 
-### 1. 환경설정 및 requirements를 설치해주세요.
+### 1. Conda 환경설정 및 requirements를 설치해주세요.
 
 ```
 conda create -n gmlp -y python=3.7 && conda activate gmlp
@@ -28,3 +27,6 @@ DDP를 이용하여 train 가능합니다.
 bash example.sh train amlp [bsz] ddp [n_gpu]
 ```
 
++ Roberta의 fullsentence로 학습할 수 있도록 설정하였습니다.
++ 학습은 data/train 디렉토리에 있는 json파일(인덱싱 된 문장들)들로 진행됩니다. 
++ 모두의 말뭉치 뉴스 데이터를 data/news 디렉토리에 넣고  (1)processing_news.py 를 진행하시면 처리된 json파일을 얻을 수 있습니다.
