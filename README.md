@@ -1,6 +1,8 @@
 # Gmlp_pretrain
  Pretraining code to train Gmlp Language model 
 
+codertimo/BERT-pytorch 코드베이스로 작성하였습니다.
+
 ## Gmlp pretrain
 
 ### 1. Conda 환경설정 및 requirements를 설치해주세요.
