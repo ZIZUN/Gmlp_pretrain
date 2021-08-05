@@ -40,15 +40,16 @@ bash example.sh finetune amlp [bsz]
 ```
 
 
-+ Roberta의 fullsentence MLM으로 학습할 수 있도록 설정하였습니다.
-+ 토크나이저는 koelectra-v3을 사용했습니다.
-+ 학습은 data/train 디렉토리에 있는 json파일(인덱싱 된 문장들)들로 진행됩니다. 
-+ 모두의 말뭉치 뉴스 데이터를 data/news 디렉토리에 넣고  (1)processing_news.py 를 진행하시면 처리된 json파일을 얻을 수 있습니다.
+  * Roberta의 fullsentence MLM으로 학습할 수 있도록 설정하였습니다.
+  * 토크나이저는 koelectra-v3을 사용했습니다.
+  * 학습은 data/train 디렉토리에 있는 json파일(인덱싱 된 문장들)들로 진행됩니다. 
+  * 모두의 말뭉치 뉴스 데이터를 data/news 디렉토리에 넣고  (1)processing_news.py 를 진행하시면 처리된 json파일을 얻을 수 있습니다.
 
 ## Pretrain Loss graph (900,000 step)
 
  ![graph](./loss_graph.PNG)
-batchszie 56으로 진행. bsz를 더 높이면 더 안정적으로 학습하여 더 좋은 성능 기대 됩니다.(accumulation step도 사용가능할듯 시간많이들겠지만;)
+
+  * batchszie 56으로 진행. bsz를 더 높이면 더 안정적으로 학습하여 더 좋은 성능 기대 됩니다.(accumulation step도 사용가능할듯 시간많이들겠지만;)
 
 ## 성능
 
