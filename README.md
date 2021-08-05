@@ -46,10 +46,7 @@ bash example.sh finetune amlp [bsz]
 + 모두의 말뭉치 뉴스 데이터를 data/news 디렉토리에 넣고  (1)processing_news.py 를 진행하시면 처리된 json파일을 얻을 수 있습니다.
 
 ## 성능
-LSTM [8] 79.79%
-BERT(Multilingual) [8] 87.43%
-BERT(형태소-태그)[8] 86.57%
-RoBERTa[본 연구] 89.88%
+
 |                     | Accuracy (%) |
 | ----------------- | ------------ |
 | LSTM            | 79.79    |
