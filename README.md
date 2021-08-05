@@ -48,6 +48,7 @@ bash example.sh finetune amlp [bsz]
 ## Pretrain Loss graph (900,000 step)
 
  ![graph](./loss_graph.PNG)
+batchszie 56으로 진행. bsz를 더 높이면 더 안정적으로 학습하여 더 좋은 성능 기대 됩니다.(accumulation step도 사용가능할듯 시간많이들겠지만;)
 
 ## 성능
 
