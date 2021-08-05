@@ -45,6 +45,19 @@ bash example.sh finetune amlp [bsz]
 + 학습은 data/train 디렉토리에 있는 json파일(인덱싱 된 문장들)들로 진행됩니다. 
 + 모두의 말뭉치 뉴스 데이터를 data/news 디렉토리에 넣고  (1)processing_news.py 를 진행하시면 처리된 json파일을 얻을 수 있습니다.
 
+## 성능
+LSTM [8] 79.79%
+BERT(Multilingual) [8] 87.43%
+BERT(형태소-태그)[8] 86.57%
+RoBERTa[본 연구] 89.88%
+|                     | Accuracy (%) |
+| ----------------- | ------------ |
+| LSTM            | 79.79    |
+| BERT(형태소-태그) | 86.57      |
+| BERT(Multilingual)  | 87.43        |
+| gmlp + tiny_att       | **87.70**        |
+| RoBERTa       | 89.88        |
+
 
 ## 참조
 
