@@ -53,6 +53,7 @@ bash example.sh finetune amlp [bsz]
 
 ## 성능
 
+### 감성분석(NSMC Dataset)
 |                     | Accuracy (%) |
 | ----------------- | ------------ |
 | LSTM            | 79.79    |
@@ -61,6 +62,17 @@ bash example.sh finetune amlp [bsz]
 | gmlp + tiny_att       | **87.70**        |
 | RoBERTa       | 89.88        |
 
+### 개체명인식(Naver NER Dataset)
+|                                                                  | Slot F1 (%) |
+| ---------------------------------------------------------------- | ----------- |
+| CNN-BiLSTM-CRF                                                | 74.57       |
+| DistilKoBERT                                                     | 84.13       |
+| Bert-Multilingual                                                | 84.20       |
+| gmlp + tiny_att(ours)                                          | **85.82**       |
+| KoBERT                                                           | 86.11       |
+| RoBERTa(ours)                                                   | 87.58       |
+
+
 
 ## 참조
 
@@ -68,8 +80,10 @@ bash example.sh finetune amlp [bsz]
   * lucidrains/[g-mlp-pytorch][2]
   * labmlai/[annotated_deep_learning_paper_implementations][3]
   * monologg/[KoELECTRA][4]
+  * monologg/[KoBERT-NER][5]
 
 [1]:https://github.com/codertimo/BERT-pytorch
 [2]:https://github.com/lucidrains/g-mlp-pytorch
 [3]:https://github.com/labmlai/annotated_deep_learning_paper_implementations
 [4]:https://github.com/monologg/KoELECTRA
+[5]:https://github.com/monologg/KoBERT-NER
